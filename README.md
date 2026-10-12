@@ -7,23 +7,22 @@
 
 ## 当前进度
 
-| 分类 | 已解决 | 目标 |
-|---|---|---|
-| 数组 / 哈希 | 1 | 30 |
-| 链表 | 0 | 15 |
-| 栈 / 队列 | 0 | 15 |
-| 树 | 0 | 25 |
-| 图 | 0 | 20 |
-| 排序 / 二分 | 0 | 20 |
-| 动态规划 | 0 | 30 |
-| 贪心 / 其他 | 0 | 20 |
-| **合计** | **1** | **175** |
+已解决 **3** 题：简单 2 题，中等 1 题。
+
+| 分类 | 已解决 |
+|---|---|
+| 字符串 / 栈 | 1 |
+| 数组 / 数学 | 1 |
+| 贪心 / 排序 | 1 |
+| **合计** | **3** |
 
 ## 题解索引
 
 | 编号 | 题目 | 难度 | 核心思路 | 时间复杂度 | 代码 |
 |---|---|---|---|---|---|
-| 0001 | [两数之和](https://leetcode.cn/problems/two-sum/) | 简单 | 哈希表一次遍历，先查后插 | O(n) | [cpp](src/0001_two_sum.cpp) |
+| 1021 | [删除最外层的括号](https://leetcode.cn/problems/remove-outermost-parentheses/) | 简单 | 跟踪嵌套深度，跳过每个原语的最外层括号 | O(n) | [cpp](src/1021_remove_outer_parentheses.cpp) |
+| 2333 | [最小差值平方和](https://leetcode.cn/problems/minimum-sum-of-squared-difference/) | 中等 | 合并 k1+k2 为总预算，差值降序后逐层拉平、余量平摊 | O(n log n) | [cpp](src/2333_min_sum_square_diff.cpp) |
+| 2778 | [特殊元素平方和](https://leetcode.cn/problems/sum-of-squares-of-special-elements/) | 简单 | 枚举位置 1..n，n % i == 0 的累加平方 | O(n) | [cpp](src/2778_sum_of_squares.cpp) |
 
 <!-- 新增题目时，请在表格里加一行，保持按编号递增。 -->
 
@@ -48,14 +47,17 @@
 4. **易错点**：边界条件、下标、溢出
 5. **面试追问**：这题还能怎么变形？换输入会怎样？
 
-参考 `src/0001_two_sum.cpp`。
+参考 `src/1021_remove_outer_parentheses.cpp`（简单题的标准写法）和
+`src/2333_min_sum_square_diff.cpp`（中等题，除常规用例之外还带了一组
+「暴力枚举对拍」的随机测试）。
 
 ## 如何运行
 
 ```bash
-make                              # 编译全部题解
-make run NAME=0001_two_sum        # 编译并运行单题
-make clean                        # 清理 build/
+make                                        # 编译全部题解
+make run NAME=1021_remove_outer_parentheses # 编译并运行单题
+make list                                   # 列出 src/ 下所有题目
+make clean                                  # 清理 build/
 ```
 
 只依赖 clang++ / g++ 和 make，不需要额外安装。

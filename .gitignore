@@ -1,0 +1,37 @@
+# ---- 编译产物 ----
+build/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.out
+*.exe
+*.dSYM/
+a.out
+
+# ---- CMake ----
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+compile_commands.json
+
+# ---- IDE / 编辑器 ----
+.vscode/
+.idea/
+*.user
+*.swp
+*.swo
+*~
+
+# ---- macOS ----
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# ---- 本地私有内容，永远不要提交 ----
+.env
+*.local
+secrets/
+

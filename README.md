@@ -7,14 +7,14 @@
 
 ## 当前进度
 
-已解决 **4** 题：简单 3 题，中等 1 题。
+已解决 **5** 题：简单 3 题，中等 2 题。
 
 | 分类 | 已解决 |
 |---|---|
 | 字符串 / 栈 | 1 |
 | 数组 / 数学 | 2 |
-| 贪心 / 排序 | 1 |
-| **合计** | **4** |
+| 贪心 / 排序 | 2 |
+| **合计** | **5** |
 
 ## 题解索引
 
@@ -24,6 +24,7 @@
 | 2333 | [最小差值平方和](https://leetcode.cn/problems/minimum-sum-of-squared-difference/) | 中等 | 合并 k1+k2 为总预算，差值降序后逐层拉平、余量平摊 | O(n log n) | [cpp](src/2333_min_sum_square_diff.cpp) |
 | 2778 | [特殊元素平方和](https://leetcode.cn/problems/sum-of-squares-of-special-elements/) | 简单 | 枚举位置 1..n，n % i == 0 的累加平方 | O(n) | [cpp](src/2778_sum_of_squares.cpp) |
 | 3550 | [数位和等于下标的最小下标](https://leetcode.cn/problems/smallest-index-with-digit-sum-equal-to-index/) | 简单 | 从左往右扫，逐位剥离求数位和，首个相等即最小下标 | O(n·d) | [cpp](src/3550_smallest_index_with_digit_sum_equal.cpp) |
+| 3727 | [最大交替平方和](https://leetcode.cn/problems/maximum-alternating-sum-of-squares/) | 中等 | 只有绝对值重要，正号位放绝对值最大的 ceil(n/2) 个 | O(n log n) | [cpp](src/3727_maximum_alternating_sum_of_squares.cpp) |
 
 <!-- 新增题目时，请在表格里加一行，保持按编号递增。 -->
 

@@ -7,20 +7,21 @@
 
 ## 当前进度
 
-已解决 **6** 题：简单 3 题，中等 3 题。
+已解决 **7** 题：简单 4 题，中等 3 题。
 
 | 分类 | 已解决 |
 |---|---|
 | 字符串 / 栈 | 1 |
 | 数组 / 数学 | 2 |
-| 贪心 / 排序 | 3 |
-| **合计** | **6** |
+| 贪心 / 排序 | 4 |
+| **合计** | **7** |
 
 ## 题解索引
 
 | 编号 | 题目 | 难度 | 核心思路 | 时间复杂度 | 代码 |
 |---|---|---|---|---|---|
 | 1021 | [删除最外层的括号](https://leetcode.cn/problems/remove-outermost-parentheses/) | 简单 | 跟踪嵌套深度，跳过每个原语的最外层括号 | O(n) | [cpp](src/1021_remove_outer_parentheses.cpp) |
+| 2089 | [找出数组排序后的目标下标](https://leetcode.cn/problems/find-target-indices-after-sorting-array/) | 简单 | 统计小于、等于目标值的元素数，直接生成连续下标区间 | O(n) | [cpp](src/2089_find_target_indices_after_sorting_array.cpp) |
 | 2333 | [最小差值平方和](https://leetcode.cn/problems/minimum-sum-of-squared-difference/) | 中等 | 合并 k1+k2 为总预算，差值降序后逐层拉平、余量平摊 | O(n log n) | [cpp](src/2333_min_sum_square_diff.cpp) |
 | 2778 | [特殊元素平方和](https://leetcode.cn/problems/sum-of-squares-of-special-elements/) | 简单 | 枚举位置 1..n，n % i == 0 的累加平方 | O(n) | [cpp](src/2778_sum_of_squares.cpp) |
 | 3550 | [数位和等于下标的最小下标](https://leetcode.cn/problems/smallest-index-with-digit-sum-equal-to-index/) | 简单 | 从左往右扫，逐位剥离求数位和，首个相等即最小下标 | O(n·d) | [cpp](src/3550_smallest_index_with_digit_sum_equal.cpp) |
